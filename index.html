@@ -1,9 +1,151 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Matteo Sposato</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 { margin: 0; color: var(--primary-color); text-transform: uppercase; }
+        .contact-info { font-size: 0.9em; color: #666; margin-top: 10px; }
+
+        section { margin-bottom: 30px; }
+        h2 {
+            color: var(--accent-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 10px;
+            text-transform: uppercase;
+            font-size: 1.2em;
+        }
+
+        .job, .edu { margin-bottom: 20px; }
+        .job-title { font-weight: bold; color: var(--primary-color); display: block; }
+        .company { font-style: italic; color: #555; }
+        .date { font-size: 0.85em; color: #888; float: right; }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .skill-item {
+            background: #ecf0f1;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .date { float: none; display: block; margin-bottom: 5px; }
+            .container { padding: 20px; }
+        }
+    </style>
+</head>
 <body>
-  <h1>Matteo Sposato</h1>
-  <p id='welc_text'>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+<div class="container">
+    <header>
+        <h1>Matteo Sposato</h1>
+        <div class="contact-info">
+            📧 sposato595@gmail.com | 📞 +39 3917590491<br>
+            📍 Via Eugenio Adamo 8, 87040 Altilia (CS)
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Su di me</h2>
+        <p>
+            Mi chiamo Matteo, ho 23 anni e sono uno studente in cerca di lavoro.
+            Ritengo di essere una persona disponibile, a cui piace spendersi per aiutare gli altri.
+            In ambito lavorativo cerco di fare sempre il meglio e riesco bene a socializzare con i colleghi.
+        </p>
+    </section>
+
+    <section id="experience">
+        <h2>Esperienze</h2>
+
+        <div class="job">
+            <span class="date">Luglio 2022 - Giugno 2023</span>
+            <span class="job-title">Op. Volontario Servizio Civile</span>
+            <span class="company">COOP. SOCIALE AGORÀ - Scigliano (CS)</span>
+            <ul>
+                <li>Valorizzazione territoriale</li>
+                <li>Assistenza alla cittadinanza</li>
+                <li>Salvaguardia ambientale</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <span class="date">Luglio 2022 - Settembre 2022</span>
+            <span class="job-title">Aiuto Barista</span>
+            <span class="company">GLORY DAYS cafè - Scigliano (CS)</span>
+            <ul>
+                <li>Servizio ai tavoli</li>
+                <li>Rifornimento bevande e presa ordini</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <span class="date">Luglio 2020 - Ottobre 2020</span>
+            <span class="job-title">Venditore porta a porta</span>
+            <span class="company">BIOSALUS SRL - Rende (CS)</span>
+            <ul>
+                <li>Presa appuntamenti</li>
+                <li>Spiegazione prodotti e trattative di vendita</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Istruzione</h2>
+        <div class="edu">
+            <span class="date">20 Giugno 2020</span>
+            <span class="job-title">Diploma in Informatica (Voto 95/100)</span>
+            <span class="company">I.T.I. A. Monaco - Cosenza</span>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Competenze Trasversali</h2>
+        <div class="skills-container">
+            <div class="skill-item">Versatilità</div>
+            <div class="skill-item">Empatia</div>
+            <div class="skill-item">Problem Solving</div>
+            <div class="skill-item">Pazienza</div>
+            <div class="skill-item">Affidabilità</div>
+            <div class="skill-item">Puntualità</div>
+            <div class="skill-item">Mediazione</div>
+            <div class="skill-item">Umiltà</div>
+        </div>
+    </section>
+</div>
+
 </body>
- 
 </html>
